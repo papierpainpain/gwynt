@@ -1,13 +1,3 @@
-# Bienviendue les gens !
+# LE GWYNT
 
-Hello ! Ici tu trouveras toutes sortes de documentations (Rasbian, technologies...).
-
-___
-___
-
-## SOMMAIRE
-
-1. [**Accueil**](/)
-2. [**Raspberry Pi**](/raspi/) - Toutes les astuces pour créer un serveur maison.
-3. [**TutoPain**](/tutopain/) - D'autres tutoriels.
-4. [**PapierBouffe**](https://bouffe.papierpain.fr) - Liste de recettes sympathiques ❤.
+Le Gwynt (ou Gwent en VO) est un jeu de cartes  stratégique développé par CD Projekt RED dans le cadre du jeu The Witcher III. Le jeu est fondé sur l'univers littéraire de The Witcher créé par l'écrivain polonais Andrzej Sapkowski.
