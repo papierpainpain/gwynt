@@ -4,18 +4,15 @@ Il existe quatre factions (Hors cartes neutres), chacune possède un pouvoir sp�
 
 ## Cartes neutres
 
-!!! note
-    **Nombre de cartes** : 31
-    
-    **Pouvoir spécial** : Aucun
+> **Nombre de cartes** : 31
+> **Pouvoir spécial** : Aucun
 
 Cette faction contient toutes les cartes d'effet, quelques cartes de mêlée et des héros très puissants.
 
 ## Royaumes du nord
 
-!!! note
-    **Nombre de cartes** : 37
-    **Pouvoir spécial** : Tirez une nouvelle carte de votre réserve après une victoire
+> **Nombre de cartes** : 37
+> **Pouvoir spécial** : Tirez une nouvelle carte de votre réserve après une victoire
 
 **Leader** : Roi Foltest
 
@@ -26,9 +23,8 @@ Cette faction contient toutes les cartes d'effet, quelques cartes de mêlée et 
 
 ## Nilfgaard
 
-!!! note
-    **Nombre de cartes** : 38
-    **Pouvoir spécial** : En cas d'égalité au score, vous gagnez la partie
+> **Nombre de cartes** : 38
+> **Pouvoir spécial** : En cas d'égalité au score, vous gagnez la partie
 
 **Leader** : Empereur Emyhr
 
@@ -39,9 +35,8 @@ Cette faction contient toutes les cartes d'effet, quelques cartes de mêlée et 
 
 ## Scoia'tael
 
-!!! note
-    **Nombre de cartes** : 38
-    **Pouvoir spécial** : Vous laisse choisir quelle faction démarre
+> **Nombre de cartes** : 38
+> **Pouvoir spécial** : Vous laisse choisir quelle faction démarre
 
 **Leader** : Francesca
 
@@ -52,9 +47,8 @@ Cette faction contient toutes les cartes d'effet, quelques cartes de mêlée et 
 
 ## Monstres
 
-!!! note
-    **Nombre de cartes** : 40
-    **Pouvoir spécial** : Après chaque round, une carte aléatoire reste sur le champ de bataille
+> **Nombre de cartes** : 40
+> **Pouvoir spécial** : Après chaque round, une carte aléatoire reste sur le champ de bataille
 
 **Leader** : Eredin
 
