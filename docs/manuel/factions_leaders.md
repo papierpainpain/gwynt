@@ -4,7 +4,7 @@ Il existe quatre factions (Hors cartes neutres), chacune possède un pouvoir sp�
 
 ## Cartes neutres
 
-> **Nombre de cartes** : 31
+> **Nombre de cartes** : 31\n
 > **Pouvoir spécial** : Aucun
 
 Cette faction contient toutes les cartes d'effet, quelques cartes de mêlée et des héros très puissants.
