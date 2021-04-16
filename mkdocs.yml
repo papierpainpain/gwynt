@@ -5,7 +5,8 @@ site_author: Steven Gourves
 
 nav:
     - Accueil: index.md
-    - Manuel: manuel/index.md
+    - Manuel:
+        - manuel/index.md
         - Types de cartes: manuel/types_cartes.md
         - Factions & Leaders: manuel/factions_leaders.md
         - Cartes effets: manuel/cartes_effets.md
