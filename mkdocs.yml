@@ -1,0 +1,61 @@
+site_name: GwyntyPain
+site_url: https://gwynt.papierpain.fr
+site_description: Le Gwynt (ou Gwent en VO) est un jeu de cartes stratégique développé par CD Projekt RED dans le cadre du jeu The Witcher III. Le jeu est fondé sur l'univers littéraire de The Witcher créé par l'écrivain polonais Andrzej Sapkowski.
+site_author: Steven Gourves
+
+nav:
+    - Accueil: index.md
+    - Manuel: manuel/index.md
+        - Types de cartes: manuel/types_cartes.md
+        - Factions & Leaders: manuel/factions_leaders.md
+        - Cartes effets: manuel/cartes_effets.md
+        - Cartes unités: manuel/cartes_unites.md
+
+theme:
+    name: material
+    language: fr
+    #################
+    favicon: images/wikipain.ico
+    logo: images/wikipain.svg
+    #################
+    features:
+        - navigation.tabs
+        - navigation.indexes
+        - search.suggest
+        - search.highlight
+    #################
+    prev_next_buttons_location: bottom
+    #################
+    palette:
+        # Dark mode
+        - scheme: slate
+          primary: teal
+          accent: amber
+          toggle:
+            icon: material/weather-sunny
+            name: JOUUURRR
+        # Light mode
+        - scheme: default
+          primary: teal
+          accent: amber
+          toggle:
+            icon: material/weather-night
+            name: NUIIITTT
+
+markdown_extensions:
+    - admonition
+    - toc:
+        permalink: ⚓︎
+        toc_depth: 5
+    - pymdownx.highlight:
+        linenums: true
+        linenums_style: pymdownx.inline
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
+
+plugins:
+    - search:
+        lang: fr
+
+copyright: Copyright © 2020-2021 <a href="https://www.gourves-steven.fr">Steven Gourves</a>, Correctionné par Julie Bousseau, Create with ❤.
