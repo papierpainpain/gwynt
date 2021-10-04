@@ -1,0 +1,31 @@
+kind: pipeline
+type: docker
+name: deploy gwynt
+platform:
+  os: linux
+  arch: arm
+trigger:
+  branch:
+    - master
+    
+steps:
+  - name: build
+    pull: if-not-exists
+    image: python_mkdocs
+    commands:
+      - mkdocs build --clean
+  - name: deploy
+    pull: if-not-exists
+    image: appleboy/drone-scp
+    settings:
+      host:
+        from_secret: HOST_PAIN
+      username:
+        from_secret: LOGIN_PAIN
+      password: 
+        from_secret: PWD_PAIN
+      port: 7137
+      command_timeout: 2m
+      target: /var/www/html/gwynt
+      source:
+        - site/*
