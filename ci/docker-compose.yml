@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  app:
+    image: registry.papierpain.fr/labo/gwynt:${VERSION}
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager] # TODO: Mettre sur le worker une fois corrigé
+      restart_policy:
+        max_attempts: 3
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=cloud-public
+        - traefik.constraint-label=cloud-public
+        
+        ## HTTP ##
+        - traefik.http.routers.gwynt.entrypoints=web
+        - traefik.http.routers.gwynt.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.gwynt.middlewares=gwynt-redirect
+        # HTTP: middlewares
+        - traefik.http.middlewares.gwynt-redirect.redirectscheme.scheme=https
+        - traefik.http.middlewares.gwynt-redirect.redirectscheme.permanent=true
+        
+        ## HTTPS ##
+        - traefik.http.routers.gwynt-https.entrypoints=websecure
+        - traefik.http.routers.gwynt-https.rule=Host(`${DOMAIN?Variable not set}`)
+        - traefik.http.routers.gwynt-https.tls=true
+        - traefik.http.routers.gwynt-https.tls.certresolver=letsencrypt
+        - traefik.http.routers.gwynt-https.tls.options=default
+        
+        ## LOADBALANCER ##
+        - traefik.http.services.gwynt-https.loadbalancer.server.port=80
+    networks:
+      - cloud-public
+
+networks:
+  cloud-public:
+    external: true
